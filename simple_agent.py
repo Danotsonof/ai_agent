@@ -11,6 +11,4 @@ response: ChatResponse = chat(model='gemma:2b', messages=[
     'content': 'Can the ocean water level reduce due to gloabl warming?',
   },
 ])
-print(response['message']['content'])
-# or access fields directly from the response object
 print(response.message.content)
